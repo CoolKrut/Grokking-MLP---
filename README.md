@@ -3,7 +3,7 @@
 ## 1. О проекте
 - **Статья:** A. Gromov, *Grokking modular arithmetic*, [arXiv:2301.02679](https://arxiv.org/abs/2301.02679).  
 - **Код авторов:** [d-doshi/Grokking](https://github.com/d-doshi/Grokking).
-- **Текст pre-registration:** [`grokking_prereg/pre_registration.md`](pre_registration.md).
+- **Текст pre-registration:** [`pre_registration.md`](pre_registration.md).
 
 ## 2. Быстрый старт
 На этапе pre-registration в репозитории зафиксирован запуск оригинального авторского кода:
@@ -12,9 +12,9 @@
 bash asis/run_asis.sh      # ≈ 2 мин на CPU, нужно ≥ 6 ГБ RAM
 ```
 
-- Скрипт запуска: [`grokking_prereg/asis/run_asis.sh`](asis/run_asis.sh)
-- Лог обучения: [`grokking_prereg/asis/asis_training_log.txt`](asis/asis_training_log.txt)
-- Зависимости окружения: [`grokking_prereg/requirements.txt`](requirements.txt)
+- Скрипт запуска: [`asis/run_asis.sh`](grokking_prereg/asis/run_asis.sh)
+- Лог обучения: [`asis/asis_training_log.txt`](grokking_prereg/asis/asis_training_log.txt)
+- Зависимости окружения: [`requirements.txt`](grokking_prereg/requirements.txt)
 
 ## 3. Раздел оригинального кода
 
@@ -35,14 +35,14 @@ bash asis/run_asis.sh      # ≈ 2 мин на CPU, нужно ≥ 6 ГБ RAM
 | Точность train / test после 1000 эпох | 100% / 100% |
 | Средний $\text{IPR}_2$ весов в конце | $\approx 0.75$ |
 
-**Правки окружения:** в исходном репозитории нет requirements; `pip install timm` ставит torchvision, несовместимую с CPU-сборкой torch (`operator torchvision::nms does not exist`) — переустановлена CPU-сборка torchvision 0.29.1 (зафиксировано в [`requirements.txt`](requirements.txt)).
+**Правки окружения:** в исходном репозитории нет requirements; `pip install timm` ставит torchvision, несовместимую с CPU-сборкой torch (`operator torchvision::nms does not exist`) — переустановлена CPU-сборка torchvision 0.29.1 (зафиксировано в [`requirements.txt`](grokking_prereg/requirements.txt)).
 
 **Файлы запуска:**
-- Лог обучения (каждые 10 эпох): [`grokking_prereg/asis/asis_training_log.txt`](asis/asis_training_log.txt)
+- Лог обучения (каждые 10 эпох): [`asis/asis_training_log.txt`](grokking_prereg/asis/asis_training_log.txt)
 - Графики ноутбука:
-  - Точность и функция потерь: [`grokking_prereg/asis/figures/loss_accuracy.png`](asis/figures/loss_accuracy.png)
-  - Динамика локализации (IPR): [`grokking_prereg/asis/figures/ipr.png`](asis/figures/ipr.png)
-  - Фурье-спектр весов: [`grokking_prereg/asis/figures/analytic_fft.png`](asis/figures/analytic_fft.png)
+  - Точность и функция потерь: [`asis/figures/loss_accuracy.png`](grokking_prereg/asis/figures/loss_accuracy.png)
+  - Динамика локализации (IPR): [`asis/figures/ipr.png`](grokking_prereg/asis/figures/ipr.png)
+  - Фурье-спектр весов: [`asis/figures/analytic_fft.png`](grokking_prereg/asis/figures/analytic_fft.png)
 
 ---
 
