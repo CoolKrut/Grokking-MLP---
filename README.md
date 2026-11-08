@@ -3,12 +3,13 @@
 ## 1. О проекте
 - **Статья:** A. Gromov, *Grokking modular arithmetic*, [arXiv:2301.02679](https://arxiv.org/abs/2301.02679).  
 - **Код авторов:** [d-doshi/Grokking](https://github.com/d-doshi/Grokking).
-- **Текст pre-registration:** [`pre_registration.md`](pre_registration.md).
+- **Текст pre-registration:** [`pre_registration.md`](grokking_prereg/pre_registration.md).
 
 ## 2. Быстрый старт
 На этапе pre-registration в репозитории зафиксирован запуск оригинального авторского кода:
 
 ```bash
+cd grokking_prereg
 bash asis/run_asis.sh      # ≈ 2 мин на CPU, нужно ≥ 6 ГБ RAM
 ```
 
@@ -23,7 +24,7 @@ bash asis/run_asis.sh      # ≈ 2 мин на CPU, нужно ≥ 6 ГБ RAM
 | Параметр | Значение |
 | --- | --- |
 | Код | [d-doshi/Grokking](https://github.com/d-doshi/Grokking) |
-| Команда | `bash asis/run_asis.sh` |
+| Команда | `cd grokking_prereg && bash asis/run_asis.sh` |
 | Железо | 2 vCPU, 7 ГБ RAM, без GPU |
 | Окружение | Python 3.13.18, torch 2.14.1+cpu, torchvision 0.29.1+cpu, numpy 2.5.3, matplotlib 3.11.2, timm 1.0.30, ml_collections 1.1.0 |
 | Время / память | 106 с на весь ноутбук / пик 5.2 ГБ RAM |
