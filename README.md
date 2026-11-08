@@ -22,11 +22,10 @@ bash asis/run_asis.sh      # ≈ 2 мин на CPU, нужно ≥ 6 ГБ RAM
 
 | Параметр | Значение |
 | --- | --- |
-| Код | [d-doshi/Grokking](https://github.com/d-doshi/Grokking), коммит `0b4335f`, ноутбук `Notebooks/Grokking_modular_arithmetic.ipynb` без изменений |
-| Команда | `bash asis/run_asis.sh` (скрипт [`asis/run_asis.sh`](asis/run_asis.sh)) |
-| Железо | 2 vCPU Intel Xeon 2.8 ГГц, 7 ГБ RAM, без GPU (`USE_GPU = False` в ноутбуке) |
+| Код | [d-doshi/Grokking](https://github.com/d-doshi/Grokking) |
+| Команда | `bash asis/run_asis.sh` |
+| Железо | 2 vCPU, 7 ГБ RAM, без GPU |
 | Окружение | Python 3.13.18, torch 2.14.1+cpu, torchvision 0.29.1+cpu, numpy 2.5.3, matplotlib 3.11.2, timm 1.0.30, ml_collections 1.1.0 |
-| Конфигурация ноутбука | $p = 97$, $\alpha = 0.5$, $N = 500$, $x^2$, MSE, AdamW $\text{lr} = 10^{-3}$, $\text{wd} = 15$, 1000 эпох, полный батч, 1 сид |
 | Время / память | 106 с на весь ноутбук / пик 5.2 ГБ RAM |
 
 | Результат | Значение |
